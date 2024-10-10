@@ -18,6 +18,7 @@ const validateReview = (req, res, next) => {
 
 router.post(
   "/",
+
   validateReview,
   catchAsync(async (req, res) => {
     const campground = await Campground.findById(req.params.id);
@@ -32,6 +33,7 @@ router.post(
 
 router.delete(
   "/:reviewId",
+
   catchAsync(async (req, res) => {
     const { id, reviewId } = req.params;
     await Campground.findByIdAndUpdate(id, { $pull: { reviews: reviewId } });
