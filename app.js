@@ -20,7 +20,7 @@ const campgroundRoutes = require("./routes/campgrounds");
 const reviewRoutes = require("./routes/reviews");
 
 const MongoStore = require("connect-mongo");
-const dbUrl = "process.env.DB_UR";
+const dbUrl = process.env.DB_URL;
 // -----atlas connect-----
 // process.env.DB_UR
 // -----local connect-----
