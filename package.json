@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "20.15.1"
+  "node": ">=18.18.0 <19.0.0"
   },
   "name": "yelp-camp-app",
   "version": "1.0.0",
